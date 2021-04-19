@@ -1,0 +1,18 @@
+{
+  "name": "pg-docker-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db-up": "docker run --rm --name node-pg-postgres -e POSTGRES_HOST_AUTH_METHOD=trust -p 5432:5432 -d postgres",
+    "db-down": "docker stop node-pg-postgres",
+    "psql": "docker exec -it node-pg-postgres psql -U postgres",
+    "bash": "docker exec -it node-pg-postgres bash",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.6.0"
+  }
+}
