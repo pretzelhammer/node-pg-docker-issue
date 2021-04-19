@@ -78,25 +78,25 @@ Which doesn't make any sense because `POSTGRES_HOST_AUTH_METHOD=trust` was set s
 
 ### Other potentially useful commands
 
-1) bring postgres docker container down
+- bring postgres docker container down
 
 ```
 npm run db-down
 ```
 
-2) connect to postgres docker container with psql
+- connect to postgres docker container with psql
 
 ```
 npm run psql
 ```
 
-3) connect to postgres docker container with bash
+- connect to postgres docker container with bash
 
 ```
 npm run bash
 ```
 
-Potentially relevant info:
+Potentially relevant info from inside docker container:
 
 ```
 $ uname -a
