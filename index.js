@@ -1,6 +1,4 @@
-
-
-const { Pool } = require('pg')
+const { Pool } = require('pg');
 
 const connectionString = 'postgres://postgres@localhost:5432/postgres';
 
